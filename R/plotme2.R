@@ -19,7 +19,7 @@
 plotme2 <- function(plotdata,x,y)
 {ggplot(plotdata) +
     aes(x = plotdata[, x], y = plotdata[,y]) +
-    geom_point(color = "#ffffff") +
+    geom_point(color = "#f15a34") +
     ggtitle("") +
     theme(plot.title = element_text(hjust = 0.5)) +
     xlab(gsub(".", " ", colnames(plotdata[x]), fixed = TRUE)) +
