@@ -1,0 +1,19 @@
+Package: PlotPackage
+Title: Package to manage plots
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Lewis",
+           family = "Mews",
+           role = c("aut", "cre"),
+           email = "lewis.mews@objectiveit.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Creating this package for use in colchester R meet up may 2019
+    It will contain plot functions which I call inside the R markdown file.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0)
