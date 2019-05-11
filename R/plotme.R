@@ -21,11 +21,11 @@
 plotme <- function(plotdata,x,y,z)
              {ggplot(plotdata) +
                aes(x = plotdata[, x], y = plotdata[,y], col = plotdata[,z]) +
-               geom_point(color = "#f15a34") +
+               geom_point() +
                ggtitle("") +
                theme(plot.title = element_text(hjust = 0.5), legend.position = "bottom") +
                xlab(gsub(".", " ", colnames(plotdata[x]), fixed = TRUE)) +
                labs(color=colnames(plotdata)[z]) +
-               ylab(gsub(".", " ", colnames(plotdata[y]), fixed = TRUE))# +
-               #scale_color_manual(values=c("red", "blue", "#56B4E9"))
+               ylab(gsub(".", " ", colnames(plotdata[y]), fixed = TRUE)) +
+               scale_color_manual(values=c("#f15a34", "blue", "#56B4E9"))
   }
